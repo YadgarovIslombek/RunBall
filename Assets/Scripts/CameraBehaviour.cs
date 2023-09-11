@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class CameraBehaviour : MonoBehaviour
 {
-    [Tooltip("На какой объект должна смотреть камера")]
+    [Tooltip("Kamera qaysi obektga qarashi kerak?")]
     public  Transform target;
 
     [Tooltip("Kamera targetga qanchalik mos keladi")]

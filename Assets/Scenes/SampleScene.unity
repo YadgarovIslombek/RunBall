@@ -152,7 +152,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -161,7 +161,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.5
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -383,7 +383,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 8776097868763860, guid: 3625c74a2e9f5e54782791d702c59b77, type: 3}
   startPoint: {x: 0, y: 0, z: -5}
-  initSpawnNum: 10
+  obstacle: {fileID: 4375133978892506643, guid: 29238494d3c169a4cb44a37a7116cf1c, type: 3}
+  initSpawnNum: 55
+  initNoObstacles: 1
 --- !u!4 &1113163082
 Transform:
   m_ObjectHideFlags: 0
@@ -432,8 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbfc0bf1be47214478dcfb703228c84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dodgeSpeed: 5
-  roolSpeed: 5
+  dodgeSpeed: 4.04
+  roolSpeed: 7.6
 --- !u!135 &1528381586
 SphereCollider:
   m_ObjectHideFlags: 0

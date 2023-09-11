@@ -5,11 +5,11 @@ using UnityEngine;
 
 
 /// <summary>
-/// Управляет созданием новой плитки и уничтожением этой, когда игрок достигает конца.
+/// O'yinchi oxiriga yetganda yangi plitka yaratilishini va uni yo'q qilishni nazorat qiladi.
 /// </summary>
 public class TileEndBehaviour : MonoBehaviour
 {
-    [Tooltip("Сколько времени ждать, прежде чем уничтожить плитку после достижения конца")]
+    [Tooltip("Oxirigacha etib borganidan keyin plitkani yoq qilishdan oldin qancha kutish kerak")]
     public float destroyTime = 1.5f;
 
     private void onTriggerEnter(Collider collider){

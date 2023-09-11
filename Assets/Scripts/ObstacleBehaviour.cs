@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +11,7 @@ public class ObstacleBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Сначала проверьте, не столкнулись(collide OR collision) ли мы с игроком
+        //Avvalo, biz o'yinchi bilan to'qnashganimizni yoki to'qnashganimizni tekshiring
         if (collision.gameObject.GetComponent<ControlBall>())
         {
 
@@ -20,8 +20,8 @@ public class ObstacleBehaviour : MonoBehaviour
             Destroy(collision.gameObject);
 
 
-            // Вызов функции ResetGame после
-            // время ожидания прошло
+        // ResetGame funksiyasini keyin chaqiring
+             // kutish vaqti o'tdi
 
             Invoke("resetGame", waitTime);
         }
